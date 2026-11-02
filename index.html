@@ -195,16 +195,16 @@ footer a:hover{color:#fff}
 <a class="wa" id="wa" href="#contact" aria-label="Enquire on WhatsApp">WhatsApp enquiry</a>
 
 <script>
-const WA_NUMBER = ""; // Replace with e.g. "91XXXXXXXXXX" (country code + number, digits only)
+const 917339573678 = ""; // Replace with e.g. "91XXXXXXXXXX" (country code + number, digits only)
 const I = {
  lap:"M4 6h16v10H4zM2 19h20", wrench:"M14 6a4 4 0 0 0 5 5l-9 9-3-3 9-9a4 4 0 0 0-2-2zM5 21l-2-2", chip:"M7 7h10v10H7zM9 3v4M15 3v4M9 17v4M15 17v4M3 9h4M3 15h4M17 9h4M17 15h4",
  pc:"M6 3h12v18H6zM9 7h6M9 11h6M12 17h.01", disk:"M4 6c0-1.500 3.500-3 8-3s8 1.500 8 3-3.500 3-8 3-8-1.500-8-3zM4 6v12c0 1.500 3.500 3 8 3s8-1.500 8-3V6", win:"M3 5l8-1v8H3zM13 4l8-1v9h-8zM3 14h8v6l-8-1zM13 14h8v7l-8-1z",
  rec:"M3 12a9 9 0 1 0 3-6.700M3 4v5h5", code:"M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"};
 const S=[["lap","Laptop and desktop sales","New and refurbished options, matched to your needs."],["wrench","Laptop repair","Motherboard-level servicing and fault finding."],["chip","Servicing and thermal paste","Cleaning and thermal paste replacement to fix heat and noise."],["lap","Part replacement","Screen, keyboard, battery, hinge, RAM and SSD."],["pc","Custom gaming PCs","Built around your games and budget."],["pc","Workstations","High-performance systems for video editing and professional apps."],["disk","Spare parts","RAM, SSDs, graphics cards, processors and motherboards."],["win","Windows and software setup","Installation, drivers and software configuration."],["rec","Data recovery and troubleshooting","Help for failed drives and system problems."],["code","Custom software","Web applications, bike showroom and school management software."]];
 document.getElementById("svc").innerHTML=S.map(s=>`<article class="card"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="${I[s[0]]}"/></svg></div><h3>${s[1]}</h3><p>${s[2]}</p></article>`).join("");
-const wa=(msg)=>{const d=WA_NUMBER.replace(/\D/g,"");return d?`https://wa.me/${d}?text=${encodeURIComponent(msg)}`:null};
+const wa=(msg)=>{const d=917339573678.replace(/\D/g,"");return d?`https://wa.me/${d}?text=${encodeURIComponent(msg)}`:null};
 const w=document.getElementById("wa");
-w.addEventListener("click",e=>{const u=wa("Hello LapupTech, I would like to make an enquiry.");if(u){w.href=u;w.target="_blank";w.rel="noopener"}else{e.preventDefault();document.getElementById("contact").scrollIntoView();document.getElementById("ok").textContent="WhatsApp number not set yet. Add it in the WA_NUMBER setting."}});
+w.addEventListener("click",e=>{const u=wa("Hello LapupTech, I would like to make an enquiry.");if(u){w.href=u;w.target="_blank";w.rel="noopener"}else{e.preventDefault();document.getElementById("contact").scrollIntoView();document.getElementById("ok").textContent="WhatsApp number not set yet. Add it in the 917339573678 setting."}});
 const f=document.getElementById("f");
 f.addEventListener("submit",e=>{e.preventDefault();
  const n=f.n,p=f.p,m=f.m;let bad=false;
@@ -215,7 +215,7 @@ f.addEventListener("submit",e=>{e.preventDefault();
  const ok=document.getElementById("ok");ok.textContent="";
  if(bad)return;
  const u=wa(`Hello LapupTech. I am ${n.value.trim()} (${p.value.trim()}). Topic: ${f.t.value}. ${m.value.trim()}`);
- if(u){window.open(u,"_blank","noopener");ok.textContent="Opening WhatsApp with your enquiry."}else{ok.textContent="Form is valid. Set the WhatsApp number in WA_NUMBER to send enquiries."}
+ if(u){window.open(u,"_blank","noopener");ok.textContent="Opening WhatsApp with your enquiry."}else{ok.textContent="Form is valid. Set the WhatsApp number in 917339573678 to send enquiries."}
 });
 </script>
 </body>
